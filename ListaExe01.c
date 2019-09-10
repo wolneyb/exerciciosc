@@ -32,7 +32,7 @@ int main(){
 				scanf("%f",&A);
 				printf("Insira outro numero: ");
 				scanf("%d",&B);
-				C=sqrt(A)/B;
+				C=pow(A,1.0/B);
 				printf("Valor: %f. \n",C);
 				break;
 			case 4: 
