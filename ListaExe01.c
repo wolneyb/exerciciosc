@@ -24,7 +24,7 @@ int main(){
 				scanf("%f",&A);
 				printf("Insira outro numero: ");
 				scanf("%d",&B);
-				C=pow(A,1.0/B);
+				C=pow(A,B);
 				printf("Valor: %f. \n",C);				
 				break;
 			case 3:
