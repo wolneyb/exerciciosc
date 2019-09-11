@@ -71,7 +71,7 @@ int main(){
 			case 8:
 				break;
 			case 9:
-				printf("Opcao 9 selecionada. Insira sem nome: \n");
+				printf("Opcao 9 selecionada. Insira seu nome: \n");
 				scanf("%s \n",nome);
 				
 				printf("Agora digite sua matricula: \n");
