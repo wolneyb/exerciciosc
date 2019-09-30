@@ -2,12 +2,12 @@
 #include<math.h>
 #include<conio.h>
 int main(){
-	int x=1,numPI,B,Ano,mat;
+	int x=1,numPI,B,Ano,mat,fat,n,num,resultado=0,i,y,j;
 	float A,C,n1,n2,n3,med,nota1,nota2,media;
 	char nome[50];
 	
 	while(x!=0){
-		printf("Digite um numero de 1 a 9: \n 1 - Primeira opcao \n 2 - Segunda opcao  \n 3 - Terceira opcao \n 4 - Quarta opcao \n 5 - Quinta opcao \n 6 - Sexta opcao \n 7 - Setima opcao \n 8 - Oitava opcao \n 9 - Nona opcao \n 0 - Sair \n");
+		printf("Digite um numero de 1 a 9: \n 1 - Primeira opcao \n 2 - Segunda opcao  \n 3 - Terceira opcao \n 4 - Quarta opcao \n 5 - Quinta opcao \n 6 - Sexta opcao \n 7 - Setima opcao \n 8 - Oitava opcao \n 9 - Nona opcao \n 10 - Decima opcao \n 0 - Sair \n");
 		scanf("%d",&x);
 		if(x>0&&x<=9){
 		switch(x){
@@ -67,12 +67,42 @@ int main(){
 				else printf("Nota invalida. \n");
 				break;
 			case 7:
+				printf("Insira um valor para o qual deseja calcular seu fatorial: ");
+				scanf("%d", &n);
+				for(fat = 1; n > 1; n = n - 1)
+				fat = fat * n;
+				printf("\nFatorial calculado: %d \n", fat);
 				break;
 			case 8:
+				 printf("Digite um número: ");
+				 scanf("%d", &num);
+ 				for (i = 2; i <= num / 2; i++) {
+    				if (num % i == 0) {
+       				resultado++;
+       				break;
+    				}
+ 				}
+ 				if (resultado == 0){
+    			printf("%d e um numero primo\n", num);
+ 				}else{
+    			printf("%d nao e um numero primo\n", num);
+				}
 				break;
 			case 9:
-				printf("Opcao 9 selecionada. Insira seu nome: \n");
-				scanf("%s \n",nome);
+				printf("Escreva o n-esimo numero da sequencia: ");
+				scanf("%d",&j);
+				x=y=1;
+				printf("%d\n",x);
+				for(i=0;i<=(j-1);i++){
+					y=x-y;
+					x=y+x;
+					printf("%d ",x);
+     			}
+     			printf("\n");
+				break;
+			case 10:
+				printf("Opcao 9 selecionada. Insira sem nome: \n");
+				scanf("%s \n",&nome);
 				
 				printf("Agora digite sua matricula: \n");
 				scanf("%d",&mat);
