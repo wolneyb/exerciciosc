@@ -7,9 +7,9 @@ int main(){
 	char nome[50];
 	
 	while(x!=0){
-		printf("Digite um numero de 1 a 9: \n 1 - Primeira opcao \n 2 - Segunda opcao  \n 3 - Terceira opcao \n 4 - Quarta opcao \n 5 - Quinta opcao \n 6 - Sexta opcao \n 7 - Setima opcao \n 8 - Oitava opcao \n 9 - Nona opcao \n 10 - Decima opcao \n 0 - Sair \n");
+		printf("Digite um numero de 1 a 9: \n 1 - Primeira opcao \n 2 - Segunda opcao  \n 3 - Terceira opcao \n 4 - Quarta opcao \n 5 - Quinta opcao \n 6 - Sexta opcao \n 7 - Setima opcao \n 8 - Oitava opcao \n 9 - Nona opcao \n 0 - Sair \n");
 		scanf("%d",&x);
-		if(x>0&&x<=9){
+		if(x>0&&x<=10){
 		switch(x){
 			case 1: 
 				printf("Opcao 1 selecionada. Insira um numero: ");
@@ -101,7 +101,7 @@ int main(){
      			printf("\n");
 				break;
 			case 10:
-				printf("Opcao 9 selecionada. Insira sem nome: \n");
+				printf("Opcao 10 selecionada. Insira sem nome: \n");
 				scanf("%s \n",&nome);
 				
 				printf("Agora digite sua matricula: \n");
